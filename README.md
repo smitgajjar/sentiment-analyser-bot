@@ -1,20 +1,43 @@
-# python-telegram-bot
-Telegram bot compatible with Python 3.7. Webhooks with ngrok to Telegram bot message stream, conditional responses.
+# Sentiment Analyser Bot
 
-Currently under development - 4/13/2019
+![](https://github.com/smitgajjar/asciit/blob/master/command_line.png)
 
-## Instructions For Use:
-Download ngrok into the project root directory: https://ngrok.com/download
+### What is it?
+A chatbot, which analyses polarity of recent tweets of some given twitter handle. It classifies sentiment of the tweets into negative, neutral or positive calibre. (replies in the range of -1 to +1)
 
-Navigate the the root directory in terminal, run:
+### How it works?
+- The core of this project lies in the trained ML model of TextBlob module, which does our amazing work of Natural Language Processing of tweets.
+- Tweepy fetches required tweets at real time.
+- Flask handles the backend of our chatbot.
+- Ngrok hosts our bot on https server temporarily.
 
-> ./ngrok http 5000
+### Prerequistes:
+- Python 3.7
+- Flask
+- Twitter API
+- Tweepy
+- TextBlob
+- Telegram bot API
+- Numpy
+- ngrok
 
-Add your telegram bot token to the TOKEN variable in config.py
+### How to create your own bot and use it?
+- Clone this repository
+- Download ngrok into this project directory: https://ngrok.com/download
+- Add your twitter API credentials in twitter_credentials.py file
+- Now, fire up the terminal and type the following:
+```
+username@username-PC: ~/myrepository$ ./ngrok http 5000
+```
+- Add your telegram bot token in config.py file
+- Add your ngrok https URL (as obtained in the terminal output) in config.py file
+- Run the Flask server:
+```
+username@username-PC: ~/myrepository$ python3 app.py
+```
 
-Add your ngrok https url to the NGROK_URL variable in config.py
+There you go !!!
 
-Configure conditional actions based on Telegram message text in telegram_bot.py TelegramBot.action class method
+Go ahead, play with your bot!
 
-Run the app server however you have python3.7 set to PATH:
-> $ python3.7 app.py
+![](https://github.com/smitgajjar/asciit/blob/master/command_line.png)
