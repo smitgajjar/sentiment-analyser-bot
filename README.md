@@ -1,6 +1,6 @@
 # Sentiment Analyser Bot
 
-![](https://github.com/smitgajjar/asciit/blob/master/start_help_command.gif)
+![](https://github.com/smitgajjar/sentiment_analyser_bot/blob/master/start_help_command.gif)
 
 ### What is it?
 A chatbot, which analyses polarity of recent tweets of some given twitter handle. It classifies sentiment of the tweets into negative, neutral or positive calibre. (replies in the range of -1 to +1)
@@ -40,4 +40,4 @@ There you go !!!
 
 Go ahead, play with your bot!
 
-![](https://github.com/smitgajjar/asciit/blob/master/analysetweets_command.gif)
+![](https://github.com/smitgajjar/sentiment_analyser_bot/blob/master/analysetweets_command.gif)
